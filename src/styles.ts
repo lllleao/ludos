@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 import MadeOKSBold from './fonts/MADEOkineSansPERSONALUSE-Bold.otf'
+import PoppinsRegular from './fonts/Poppins-Regular.ttf'
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -15,6 +16,11 @@ export const GlobalStyles = createGlobalStyle`
     @font-face {
         font-family: MadeOKSBold;
         src: url(${MadeOKSBold}) format('opentype');
+    }
+
+    @font-face {
+        font-family: PoppinsRegular;
+        src: url(${PoppinsRegular}) format('truetype');
     }
 
     .container {

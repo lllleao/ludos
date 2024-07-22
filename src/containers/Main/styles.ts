@@ -7,25 +7,35 @@ export const MainContainer = styled.main`
     width: 100dvw;
 `
 export const Hero = styled.section`
-    height: 100%;
-    h2 {
-        font-size: 64px;
-        font-family: 'MadeOKSBold';
-        margin-right: 18px;
-        margin-bottom: 22px;
-    }
-
     display: flex;
     align-items: center;
-    justify-content: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 `
-export const Works = styled.div`
-    display: grid;
-    grid-template-columns: 350px 350px;
-    gap: 24px;
-    padding-left: 64px;
 
+export const Call = styled.div`
+    text-align: center;
+    h2 {
+        font-size: 48px;
+        font-family: 'MadeOKSBold', sans-serif;
+        margin-bottom: 22px;
+        letter-spacing: 8px;
+    }
+
+    p {
+        max-width: inset;
+        font-family: PoppinsRegular;
+        font-size: 22px;
+        max-width: 850px;
+        letter-spacing: 5px;
+    }
+`
+
+export const Works = styled.div`
+    margin-left: 64px;
     img {
-        width: 100%;
+        width: 350px;
     }
 `
