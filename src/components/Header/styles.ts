@@ -7,8 +7,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
 
     img {
-        max-width: clamp(150px, 3vw, 200px);
-        /* width: 100%; */
+        width: clamp(110px, 10vw, 150px);
         margin-left: 64px;
         cursor: pointer;
     }
