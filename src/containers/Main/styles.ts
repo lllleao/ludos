@@ -16,11 +16,10 @@ export const Hero = styled.section`
 `
 
 export const Call = styled.div`
-    margin-left: 64px;
-    /* text-align: center; */
+    /* margin-left: 64px; */
     max-width: 850px;
     h2 {
-        font-size: 62px;
+        font-size: 124px;
         font-family: 'MadeOKSBold', sans-serif;
         margin-bottom: 22px;
         letter-spacing: 8px;
@@ -35,6 +34,7 @@ export const Call = styled.div`
 `
 
 export const Works = styled.div`
+    width: 100%;
     visibility: hidden;
     margin-left: 64px;
     img {
