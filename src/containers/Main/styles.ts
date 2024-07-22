@@ -19,7 +19,7 @@ export const Call = styled.div`
     margin-left: 64px;
     max-width: 850px;
     h2 {
-        font-size: 124px;
+        font-size: 92px;
         font-family: 'MadeOKSBold', sans-serif;
         margin-bottom: 22px;
         letter-spacing: 1px;

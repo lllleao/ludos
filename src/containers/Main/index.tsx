@@ -7,7 +7,9 @@ const Main = () => {
         <MainContainer>
             <Hero>
                 <Call>
-                    <h2>Conheça o nosso trabalho!</h2>
+                    <h2>
+                        Conheça o<br /> nosso trabalho!
+                    </h2>
                     <p>
                         A <strong>LUDOS</strong> faz mais do que vídeos, nós
                         criamos histórias. Conte com um trabalho amplamente
