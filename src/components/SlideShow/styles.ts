@@ -6,7 +6,7 @@ export const Slide = styled.div`
     width: 100%;
     /* margin-left: 64px; */
     img {
-        filter: drop-shadow(0px 0 2px #fff);
+        /* filter: drop-shadow(0px 0 2px #fff); */
         width: 300px;
     }
 `
