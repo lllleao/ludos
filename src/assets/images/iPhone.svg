@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1303" height="2654" viewBox="0 0 1303 2654">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        stroke: #000;
+        stroke-width: 5px;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Retângulo_1" data-name="Retângulo 1" class="cls-1" d="M201,0h901c111.01,0,201,89.991,201,201V2453c0,111.01-89.99,201-201,201H201C89.991,2654,0,2564.01,0,2453V201C0,89.991,89.991,0,201,0ZM87,330H1216V2343H87V330Z"/>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-2" cx="651" cy="2494.545" r="104.469"/>
+  <rect id="Retângulo_Arredondado_2" data-name="Retângulo Arredondado 2" x="601.031" y="155" width="255.875" height="29" rx="14.5" ry="14.5"/>
+  <circle id="Elipse_2" data-name="Elipse 2" cx="472.5" cy="168.5" r="29.5"/>
+</svg>

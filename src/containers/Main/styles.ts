@@ -13,6 +13,11 @@ export const Hero = styled.section`
     width: 100%;
     height: 100%;
     margin: 0 auto;
+
+    .slide-container {
+        width: 100%;
+        margin-left: 124px;
+    }
 `
 
 export const Call = styled.div`

@@ -17,7 +17,9 @@ const Main = () => {
                         <br /> suas ideias na melhor qualidade.
                     </p>
                 </Call>
-                <SlideShow />
+                <div className="slide-container">
+                    <SlideShow />
+                </div>
             </Hero>
         </MainContainer>
     )
