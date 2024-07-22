@@ -17,19 +17,20 @@ const Carrossel = () => {
         const interval = setInterval(() => {
             countRef.current -= 103
             setCount(countRef.current)
+
             if (carrosselRef.current) {
-                if (countRef.current === -412) {
-                    console.log('oi')
-                    carrosselRef.current.style.transition = `none`
-                    carrosselRef.current.style.transform = `translateX(1px)`
-                    setCount(0)
-                } else {
-                    carrosselRef.current.style.transition = `transform 1s`
-                    carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
-                }
+                carrosselRef.current.style.transition = `transform 1s`
+                carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
+                carrosselRef.current.addEventListener('transitionend', () => {
+                    if (carrosselRef.current && countRef.current === -309) {
+                        carrosselRef.current.style.transition = `none`
+                        carrosselRef.current.style.transform = `translateX(1px)`
+                        setCount(0)
+                    }
+                })
             }
-            // console.log(count)
         }, 2000)
+
         return () => clearInterval(interval)
     }, [])
     return (

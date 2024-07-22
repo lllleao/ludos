@@ -8,7 +8,6 @@ export const CarrosselContainer = styled.div`
     width: 85%;
     z-index: 1;
     column-gap: 8px;
-    /* transform: translateX(0); */
 
     img {
         width: 100%;
