@@ -29,7 +29,6 @@ export const Call = styled.div`
     }
 
     p {
-        text-align: justify;
         max-width: inset;
         font-family: PoppinsRegular;
         font-size: 22px;
