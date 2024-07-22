@@ -16,6 +16,7 @@ export const Hero = styled.section`
 `
 
 export const Call = styled.div`
+    margin-left: 64px;
     /* text-align: center; */
     max-width: 850px;
     h2 {
