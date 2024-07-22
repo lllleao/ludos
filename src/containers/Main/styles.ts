@@ -33,7 +33,6 @@ export const Call = styled.div`
         max-width: inset;
         font-family: PoppinsRegular;
         font-size: 22px;
-        letter-spacing: 5px;
         width: 80%;
     }
 `
