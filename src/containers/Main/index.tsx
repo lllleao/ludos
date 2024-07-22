@@ -1,6 +1,5 @@
-import { Call, Hero, MainContainer, Works } from './styles'
-
-import post1 from '../../assets/images/post_01_desktop.png'
+import SlideShow from '../../components/SlideShow'
+import { Call, Hero, MainContainer } from './styles'
 
 const Main = () => {
     return (
@@ -18,9 +17,7 @@ const Main = () => {
                         <br /> suas ideias na melhor qualidade.
                     </p>
                 </Call>
-                <Works>
-                    <img srcSet={post1} alt="" />
-                </Works>
+                <SlideShow />
             </Hero>
         </MainContainer>
     )

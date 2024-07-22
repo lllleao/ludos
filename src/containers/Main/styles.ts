@@ -35,12 +35,3 @@ export const Call = styled.div`
         width: 80%;
     }
 `
-
-export const Works = styled.div`
-    width: 100%;
-    visibility: hidden;
-    margin-left: 64px;
-    img {
-        width: 350px;
-    }
-`
