@@ -29,6 +29,7 @@ const Carrossel = () => {
                     if (carrosselRef.current && countRef.current === -309) {
                         carrosselRef.current.style.transition = `none`
                         carrosselRef.current.style.transform = `translateX(1px)`
+                        countRef.current = 0
                     }
                 })
             }
