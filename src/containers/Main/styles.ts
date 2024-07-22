@@ -23,7 +23,7 @@ export const Call = styled.div`
         font-family: 'MadeOKSBold', sans-serif;
         margin-bottom: 22px;
         letter-spacing: 1px;
-        line-height: 110px;
+        line-height: 105px;
     }
 
     p {
