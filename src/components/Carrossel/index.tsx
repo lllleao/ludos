@@ -17,6 +17,10 @@ const Carrossel = () => {
         const interval = setInterval(() => {
             countRef.current -= 103
             setCount(countRef.current)
+            if (countRef.current < -309) {
+                countRef.current = 0
+                setCount(countRef.current)
+            }
 
             if (carrosselRef.current) {
                 carrosselRef.current.style.transition = `transform 1s`
@@ -25,7 +29,6 @@ const Carrossel = () => {
                     if (carrosselRef.current && countRef.current === -309) {
                         carrosselRef.current.style.transition = `none`
                         carrosselRef.current.style.transform = `translateX(1px)`
-                        setCount(0)
                     }
                 })
             }

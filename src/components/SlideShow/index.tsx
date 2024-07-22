@@ -6,7 +6,11 @@ import Carrossel from '../Carrossel'
 const SlideShow = () => {
     return (
         <Slide>
-            <img srcSet={iphone} alt="" />
+            <img
+                onDragLeave={(e) => e.preventDefault()}
+                srcSet={iphone}
+                alt=""
+            />
             <Carrossel />
         </Slide>
     )

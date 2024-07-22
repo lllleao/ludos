@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
     background-color: #000;
-    padding: 32px 0;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
 
     img {
         width: clamp(110px, 10vw, 150px);
-        margin-left: 64px;
+        margin-left: 4rem;
         cursor: pointer;
     }
 `
