@@ -17,20 +17,24 @@ export const Hero = styled.section`
 
 export const Call = styled.div`
     margin-left: 64px;
-    max-width: 850px;
+    max-width: max-content;
+    width: 100%;
     h2 {
         font-size: 92px;
         font-family: 'MadeOKSBold', sans-serif;
         margin-bottom: 22px;
         letter-spacing: 1px;
         line-height: 105px;
+        /* max-width: min-content; */
     }
 
     p {
+        text-align: justify;
         max-width: inset;
         font-family: PoppinsRegular;
         font-size: 22px;
         letter-spacing: 5px;
+        width: 80%;
     }
 `
 

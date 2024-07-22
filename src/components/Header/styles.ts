@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
 
     img {
         max-width: 200px;
+        width: 100%;
         margin-left: 64px;
         cursor: pointer;
     }
