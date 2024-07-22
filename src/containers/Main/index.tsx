@@ -12,9 +12,10 @@ const Main = () => {
                     </h2>
                     <p>
                         A <strong>LUDOS</strong> faz mais do que vídeos, nós
+                        <br />
                         criamos histórias. Conte com um trabalho amplamente
-                        profissional para transmitir suas ideias na melhor
-                        qualidade.
+                        profissional para transmitir
+                        <br /> suas ideias na melhor qualidade.
                     </p>
                 </Call>
                 <Works>
