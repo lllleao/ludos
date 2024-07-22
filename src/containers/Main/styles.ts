@@ -16,9 +16,10 @@ export const Hero = styled.section`
 `
 
 export const Call = styled.div`
-    text-align: center;
+    /* text-align: center; */
+    max-width: 850px;
     h2 {
-        font-size: 48px;
+        font-size: 62px;
         font-family: 'MadeOKSBold', sans-serif;
         margin-bottom: 22px;
         letter-spacing: 8px;
@@ -28,7 +29,6 @@ export const Call = styled.div`
         max-width: inset;
         font-family: PoppinsRegular;
         font-size: 22px;
-        max-width: 850px;
         letter-spacing: 5px;
     }
 `
