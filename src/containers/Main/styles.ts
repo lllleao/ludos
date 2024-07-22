@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const MainContainer = styled.main`
     display: block;
     background-color: #000;
-    height: calc(100dvh - 117px);
+    height: calc(100dvh - 109px);
     width: 100dvw;
 `
 export const Hero = styled.section`
