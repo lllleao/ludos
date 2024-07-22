@@ -34,6 +34,7 @@ export const Call = styled.div`
 `
 
 export const Works = styled.div`
+    visibility: hidden;
     margin-left: 64px;
     img {
         width: 350px;
