@@ -15,23 +15,23 @@ const Carrossel = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            countRef.current -= 103
-            setCount(countRef.current)
-            if (countRef.current < -309) {
-                countRef.current = 0
-                setCount(countRef.current)
-            }
-
             if (carrosselRef.current) {
-                carrosselRef.current.style.transition = `transform 0.5s ease-in-out`
-                carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
+                countRef.current -= 103
+                setCount(countRef.current)
+                if (countRef.current < -309) {
+                    countRef.current = 0
+                    setCount(countRef.current)
+                }
                 carrosselRef.current.addEventListener('transitionend', () => {
-                    if (carrosselRef.current && countRef.current === -309) {
+                    if (carrosselRef.current && countRef.current <= -309) {
                         carrosselRef.current.style.transition = `none`
                         carrosselRef.current.style.transform = `translateX(1px)`
                         countRef.current = 0
+                        setCount(countRef.current)
                     }
                 })
+                carrosselRef.current.style.transition = `transform 0.5s ease-in-out`
+                carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
             }
         }, 2000)
 
