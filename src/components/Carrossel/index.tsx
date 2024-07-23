@@ -23,7 +23,7 @@ const Carrossel = () => {
             }
 
             if (carrosselRef.current) {
-                carrosselRef.current.style.transition = `transform 1s`
+                carrosselRef.current.style.transition = `transform 0.5s ease-in-out`
                 carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
                 carrosselRef.current.addEventListener('transitionend', () => {
                     if (carrosselRef.current && countRef.current === -309) {
