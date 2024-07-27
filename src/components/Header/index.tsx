@@ -1,4 +1,4 @@
-import { HeaderContainer, Menu } from './styles'
+import { HeaderContainer, Menu, MenuHamb } from './styles'
 import logo from '../../assets/images/logo.svg'
 
 const Header = () => {
@@ -23,6 +23,11 @@ const Header = () => {
                     </li>
                 </ul>
             </Menu>
+            <MenuHamb>
+                <span></span>
+                <span></span>
+                <span></span>
+            </MenuHamb>
         </HeaderContainer>
     )
 }
