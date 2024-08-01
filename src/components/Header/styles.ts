@@ -52,6 +52,9 @@ export const MenuHamb = styled.nav`
     position: fixed;
     top: 32px;
     right: 40px;
+    @media (max-width: 7023px) {
+        display: none;
+    }
 
     span {
         display: block;
