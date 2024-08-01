@@ -13,7 +13,9 @@ export const Hero = styled.section`
 
     .slide-container {
         width: 100%;
-        margin-left: 124px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 32px 0;
     }
     @media (max-width: 1023px) {
         flex-direction: column;

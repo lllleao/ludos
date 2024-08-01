@@ -10,6 +10,7 @@ const SlideShow = () => {
                 onDragLeave={(e) => e.preventDefault()}
                 srcSet={iphone}
                 alt=""
+                className="iphone"
             />
             <Carrossel />
         </Slide>
