@@ -13,10 +13,10 @@ const Header = () => {
                         <a href="#">Início</a>
                     </li>
                     <li className="menu__list__item">
-                        <a href="#">Séries</a>
+                        <a href="#">Serviços</a>
                     </li>
                     <li className="menu__list__item">
-                        <a href="#">Filmes</a>
+                        <a href="#">Planos</a>
                     </li>
                     <li className="menu__list__item">
                         <a href="#">Sobre</a>

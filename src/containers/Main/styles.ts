@@ -21,11 +21,6 @@ export const Hero = styled.section`
         height: 100%;
         width: 90%;
         padding-bottom: 32px;
-        .slide-container {
-            /* max-width: 300px; */
-            /* width: 100%; */
-            /* height: 100%; */
-        }
     }
 `
 

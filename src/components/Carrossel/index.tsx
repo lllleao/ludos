@@ -8,7 +8,6 @@ const Carrossel = () => {
     const [count, setCount] = useState(0)
     const countRef = useRef(count)
     const carrosselRef = useRef<HTMLDivElement | null>(null)
-    const imgCarrou = useRef<HTMLImageElement | null>(null)
 
     useEffect(() => {
         countRef.current = count
@@ -16,37 +15,34 @@ const Carrossel = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (imgCarrou.current) {
-                countRef.current =
-                    countRef.current < -75.6 ? 0 : countRef.current
-                countRef.current -= 25.2
-                setCount(countRef.current)
-                console.log(countRef.current)
-                if (carrosselRef.current) {
-                    const verification = countRef.current < -75.6
-                    if (!verification) {
-                        carrosselRef.current.style.transition = `transform 0.5s ease-in-out`
-                        carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
-                        carrosselRef.current.addEventListener(
-                            'transitionend',
-                            () => {
-                                if (
-                                    carrosselRef.current &&
-                                    countRef.current === -75.6
-                                ) {
-                                    carrosselRef.current.style.transition = `none`
-                                    carrosselRef.current.style.transform = `translateX(0)`
-                                    countRef.current = 0
-                                    setCount(countRef.current)
-                                }
+            countRef.current = countRef.current < -75.6 ? 0 : countRef.current
+            countRef.current -= 25.2
+            setCount(countRef.current)
+            console.log(countRef.current)
+            if (carrosselRef.current) {
+                const verification = countRef.current < -75.6
+                if (!verification) {
+                    carrosselRef.current.style.transition = `transform 0.5s ease-in-out`
+                    carrosselRef.current.style.transform = `translateX(${countRef.current}%)`
+                    carrosselRef.current.addEventListener(
+                        'transitionend',
+                        () => {
+                            if (
+                                carrosselRef.current &&
+                                countRef.current === -75.6
+                            ) {
+                                carrosselRef.current.style.transition = `none`
+                                carrosselRef.current.style.transform = `translateX(0)`
+                                countRef.current = 0
+                                setCount(countRef.current)
                             }
-                        )
-                    } else {
-                        carrosselRef.current.style.transition = `none`
-                        carrosselRef.current.style.transform = `translateX(0)`
-                        countRef.current = 0
-                        setCount(countRef.current)
-                    }
+                        }
+                    )
+                } else {
+                    carrosselRef.current.style.transition = `none`
+                    carrosselRef.current.style.transform = `translateX(0)`
+                    countRef.current = 0
+                    setCount(countRef.current)
                 }
             }
         }, 2000)
@@ -55,7 +51,7 @@ const Carrossel = () => {
 
     return (
         <CarrosselContainer ref={carrosselRef}>
-            <img ref={imgCarrou} src={post01Mobile} alt="" />
+            <img src={post01Mobile} alt="" />
             <img src={post02Mobile} alt="" />
             <img src={post03Mobile} alt="" />
             <img src={post01Mobile} alt="" />

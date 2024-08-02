@@ -9,9 +9,7 @@ export const Slide = styled.div`
     margin: 0 auto;
     z-index: 1;
     .iphone {
-        /* position: relative; */
         height: 100%;
-        overflow: hidden; // verificar se precisa tirar
     }
 
     @media (max-width: 1023px) {
