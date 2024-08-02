@@ -9,14 +9,18 @@ export const Slide = styled.div`
     margin: 0 auto;
     z-index: 1;
     .iphone {
-        position: relative;
-        /* width: 100%; */
+        /* position: relative; */
         height: 100%;
         overflow: hidden; // verificar se precisa tirar
     }
 
     @media (max-width: 1023px) {
-        max-width: 250px;
-        width: 100%;
+        width: 350px;
+        max-width: 90%;
+
+        .iphone {
+            width: 100%;
+            height: 100%;
+        }
     }
 `

@@ -5,27 +5,26 @@ export const MainContainer = styled.main`
 `
 export const Hero = styled.section`
     height: calc(100vh - 109px);
-    width: 100vw;
     display: flex;
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
+    padding: 32px 0;
 
     .slide-container {
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        padding: 32px 0;
     }
     @media (max-width: 1023px) {
         flex-direction: column;
         height: 100%;
         width: 90%;
-        padding-bottom: 2rem;
+        padding-bottom: 32px;
         .slide-container {
-            margin-left: 0;
-            max-width: 300px;
-            width: 100%;
+            /* max-width: 300px; */
+            /* width: 100%; */
+            /* height: 100%; */
         }
     }
 `
