@@ -18,7 +18,6 @@ const Carrossel = () => {
             countRef.current = countRef.current < -75.6 ? 0 : countRef.current
             countRef.current -= 25.2
             setCount(countRef.current)
-            console.log(countRef.current)
             if (carrosselRef.current) {
                 const verification = countRef.current < -75.6
                 if (!verification) {
